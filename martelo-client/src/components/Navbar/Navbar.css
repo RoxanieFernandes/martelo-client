@@ -1,3 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2 ;
+}
+
 .navbar img{
-    width: 50vw ;
+    width: 18vw ;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2vw;
+    width: 25vw;
+    list-style-type: none;
+    font-family: elza-narrow, sans-serif;
+    font-size: 1vw; 
+}
+
+.links ul li {
+    display: flex;
+    align-items: center;
+    color: #f2ae30;
+    padding-left: 3vw;
 }
