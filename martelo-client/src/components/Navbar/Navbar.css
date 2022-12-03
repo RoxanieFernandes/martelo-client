@@ -1,7 +1,8 @@
 .navbar {
+    height: 10vh;
     display: flex;
     justify-content: space-between;
-    background-color: #F2F2F2 ;
+    background-color: #f2f2f2;
 }
 
 .navbar img{
@@ -11,6 +12,9 @@
 .links {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    width: 66vw;
+    margin: none;
 }
 
 .links ul {
@@ -18,15 +22,33 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 2vw;
-    width: 25vw;
     list-style-type: none;
-    font-family: elza-narrow, sans-serif;
     font-size: 1vw; 
 }
 
 .links ul li {
     display: flex;
     align-items: center;
+    justify-content: center;
+    
     color: #f2ae30;
-    padding-left: 3vw;
+    padding-left: 2.5vw;
+}
+
+.routes ul {
+    padding-right: 2vw;
+    list-style-type: none;
+    font-size: 1vw; 
+}
+.routes ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 12vw;
+    color: #f2ae30;
+    padding-left: 1vw;
+}
+
+.routes ul li.login {
+    padding-bottom: 1vh;
 }

@@ -4,9 +4,10 @@
 }
 
 .routes-in-page ul li{
-    /* display: inline;
+    display: inline;
     list-style-type: none;
-    font-family: elza-narrow, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 1vw;
-    color:#8c8c8c ; */
+    color:#8c8c8c ;
+    letter-spacing: 0.2vw;
 }

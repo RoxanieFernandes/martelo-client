@@ -1,9 +1,9 @@
-import React from 'react'
-import "../Login/Login.css"
-import Navbar from '../../components/Navbar/Navbar'
+import React from "react";
+import "../Cadastro/Cadastro.css"
+import Navbar from "../../components/Navbar/Navbar.js";
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const Cadastro = () => {
   return (
     <div>
     <div>
@@ -14,13 +14,13 @@ const Login = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <li className="home">HOME /</li>
         </Link>
-        <Link to="/login" style={{ textDecoration: "none" }}>
-          <li className="home"> LOGIN</li>
+        <Link to="/criar-conta" style={{ textDecoration: "none" }}>
+          <li className="home"> CRIAR CONTA</li>
         </Link>
       </ul>
     </div>
   </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Cadastro;
