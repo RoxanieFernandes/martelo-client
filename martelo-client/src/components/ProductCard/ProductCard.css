@@ -1,0 +1,39 @@
+.product-card{
+    border-radius: 15px;
+    background-color: #f2f2f2 ;
+    color: #024959;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1vw;
+    font-size: 1,5vw;
+    justify-content: space-around;
+    
+}
+
+.product-card img{
+    width: 16vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw; 
+}
+
+.rent-btn {
+    padding-bottom: 2vw;
+    
+}
+
+.rent-btn button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1vw;
+    border: none;
+    border-radius: 2px;
+    width: 7vw;
+    height: 2vw;
+    font-size: 1,5vw;
+    background-color: #024959;
+    color: #fff;
+}
+
+.rent-btn button:hover{
+   background-color:  #f2ae30;
+   box-shadow: 5px 5px 5px #8c8c8c ;
+}
