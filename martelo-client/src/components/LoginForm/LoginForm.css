@@ -1,0 +1,67 @@
+.newLogin{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1vw;
+}
+
+.form h4 {
+    font-size: 2.5vw;
+    letter-spacing: 0.15em;
+    padding-bottom: 1vw;
+  }
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+.form label {
+    display: block;
+    text-align: left;
+    font-size: 1.5vw;
+    letter-spacing: 0.12em;
+  }
+
+.form button {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1vw;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5vw;
+    width: 7vw;
+    height: 2vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #024959;
+    color: #fff;
+  }
+
+.form button:hover{
+    background-color:  #f2ae30;
+    box-shadow: 5px 5px 5px #8c8c8c ;
+ } 
+
+.form input {
+    width: 100%;
+    padding: 0.5vw;
+    margin: 1em 0;
+    border: 0.01em solid #ddd;
+    font-size: 1.5vw;
+    font-family: "Oswald", sans-serif;
+  }
+
+.createNewAccount{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5vw;
+    font-family: 'Tonnelier', sans-serif;
+}
+
+.createNewAccount ul {
+    list-style-type: none;
+    padding-left: 0.8vw;
+}
+
+.createNewAccount ul li {
+    color: blue;
+}
