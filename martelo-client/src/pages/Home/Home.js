@@ -5,7 +5,7 @@ import ProductCard from "../../components/ProductCard/ProductCard.js";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <div>
         <Navbar />
       </div>

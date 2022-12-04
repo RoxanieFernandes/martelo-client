@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
+    border-bottom: #024959 solid 0.2vw;
 }
 
 .navbar img{
@@ -45,7 +46,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 12vw;
-    color: #f2ae30;
+    color: #024959;
     padding-left: 1vw;
 }
 

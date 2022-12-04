@@ -23,7 +23,7 @@ const Login = () => {
         </ul>
       </div>
 
-      <div className="login-card">
+      <div className="loginCard">
         <LoginForm/>        
       </div>
     </div>

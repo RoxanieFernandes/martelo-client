@@ -2,6 +2,7 @@ import React from "react";
 import "../CreateAccount/CreateAccount.css"
 import Navbar from "../../components/Navbar/Navbar.js";
 import { Link } from 'react-router-dom'
+import CreateAccountForm from "../../components/CreateAccountForm/CreateAccountForm.js";
 
 const CreateAccount = () => {
   return (
@@ -18,6 +19,9 @@ const CreateAccount = () => {
           <li className="home"> CRIAR CONTA</li>
         </Link>
       </ul>
+    </div>
+    <div className="createAccountForm">
+      <CreateAccountForm/>
     </div>
   </div>
   );

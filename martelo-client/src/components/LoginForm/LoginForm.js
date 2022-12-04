@@ -29,7 +29,7 @@ const LoginForm = (props) => {
         <form onSubmit={handleSubmit}>
           <label>E-mail: </label>
           <input
-            type="text"
+            type="email"
             required
             value={email}
             onChange={(e) => {
@@ -41,7 +41,7 @@ const LoginForm = (props) => {
 
           <label>Senha: </label>
           <input
-            type="text"
+            type="password"
             required
             value={password}
             onChange={(e) => {

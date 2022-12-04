@@ -3,10 +3,7 @@
     padding-left: 0;
 }
 
-.routes-in-page ul li{
-    /* display: inline;
-    list-style-type: none;
-    font-family: elza-narrow, sans-serif;
-    font-size: 1vw;
-    color:#8c8c8c ; */
+.loginCard{
+    display: flex;
+    justify-content: center;
 }

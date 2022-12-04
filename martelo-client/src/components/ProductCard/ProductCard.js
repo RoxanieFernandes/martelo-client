@@ -15,7 +15,7 @@ const ProductCard = () => {
       {/* trocar para quando usuario estiver autenticado, direcionar para /reservar */}
       <div className="rent-btn">
         <Link to="/login">
-          <button>Alugar</button>
+          <button>ALUGAR</button>
         </Link>
       </div>
     </div>
