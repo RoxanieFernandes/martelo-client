@@ -1,3 +1,7 @@
+.about-page{
+    padding-top: 4em;
+}
+
 .first-products{
     display: flex;
     justify-content: space-around;

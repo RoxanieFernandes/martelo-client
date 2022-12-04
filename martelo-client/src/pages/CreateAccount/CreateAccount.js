@@ -6,7 +6,7 @@ import CreateAccountForm from "../../components/CreateAccountForm/CreateAccountF
 
 const CreateAccount = () => {
   return (
-    <div>
+    <div className="createAccount">
     <div>
       <Navbar />
     </div>

@@ -1,25 +1,25 @@
 .newLogin{
   background-color:#f2ae30;
-  width: 50vw;
-  height: 65vh;
-  border-radius: 3vw;
+  width: 45em;
+  height: 32em;
+  border-radius: 3em;
 
 }
 
 .newLogin{
     font-family: "Oswald", sans-serif;
-    letter-spacing: 0.1vw;
+    letter-spacing: 0.1em;
 }
 
 .form h4 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2vw;
-    letter-spacing: 0.4vw;
-    padding-bottom: 1vw;
+    font-size: 2em;
+    letter-spacing: 0.4em;
+    padding-bottom: 1em;
   }
 
 .form {
-    max-width: 30vw;
+    max-width: 30em;
     margin: 0 auto;
     text-align: center;
   }
@@ -27,20 +27,22 @@
 .form label {
     display: block;
     text-align: left;
-    font-size: 1.1vw;
+    font-size: 1em;
+    margin-bottom: -0.7em;
+    margin-top: 1em;
   }
 
 .form button {
     font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.2em;
     display: inline-block;
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 1.1em;
     margin-top: 2vh;
-    width: 7vw;
-    height: 2vw;
+    width: 7em;
+    height: 2em;
     border: none;
-    border-radius: 1vw;
+    border-radius: 1em;
     background-color: #024959;
     color: #fff;
   }
@@ -53,31 +55,31 @@
 
 .form input {
     width: 100%;
-    padding: 0.5vw;
+    padding: 0.5em;
     margin: 1em 0;
     border: 0.01em solid #ddd;
-    font-size: 1.1vw;
+    font-size: 1em;
     font-family: "Oswald", sans-serif;
   }
 
 .createNewAccount{
     display: flex;
     justify-content: center;
-    padding-top: 1.5vw;
+    padding-top: 1.5em;
     font-family: 'Tonnelier', sans-serif;
 }
 
 .createNewAccount ul {
     list-style-type: none;
-    padding-left: 0.8vw;
-    font-size: 1.2vw;
+    padding-left: 0.8em;
+    font-size: 1.1em;
 }
 
 .createNewAccount ul li {
     color: blue;
-    font-size: 1.2vw;
+    font-size: 1.1em;
 }
 
 .createNewAccount p{
-    font-size: 1.2vw;
+    font-size: 1.1em;
 }

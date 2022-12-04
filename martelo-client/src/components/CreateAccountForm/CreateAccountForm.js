@@ -38,6 +38,7 @@ const CreateAccountForm = (props) => {
             type="text"
             required
             value={name}
+            placeholder="Nome completo"
             onChange={(e) => {
               setName(e.target.value);
             }}
@@ -47,12 +48,15 @@ const CreateAccountForm = (props) => {
           <input
             type="text"
             value={socialName}
+            placeholder="Como gostaria de ser chamado"
             onChange={(e) => {
               setSocialName(e.target.value);
             }}
           />
 
           <label>Selecione seu bairro: </label>
+
+          {/* completar a lista de bairro e verificar se existe uma maneira de inserir varios bairros de uma vez */}
 
           <select className="neighborhood">
             <option value="se">Sé</option>
@@ -74,6 +78,7 @@ const CreateAccountForm = (props) => {
             type="email"
             required
             value={email}
+            placeholder="email@email.com.br"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -86,6 +91,7 @@ const CreateAccountForm = (props) => {
             type="password"
             required
             value={password}
+            placeholder="Cadastre uma nova senha"
             onChange={(e) => {
               setPassword(e.target.value);
             }}

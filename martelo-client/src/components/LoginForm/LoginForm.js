@@ -32,6 +32,7 @@ const LoginForm = (props) => {
             type="email"
             required
             value={email}
+            placeholder="email@email.com.br"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -44,6 +45,7 @@ const LoginForm = (props) => {
             type="password"
             required
             value={password}
+            placeholder="Insira sua senha"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
