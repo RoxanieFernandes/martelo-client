@@ -1,9 +1,9 @@
 import React from 'react'
-import "../Reservar/Reservar.css"
+import "../Reserve/Reserve.css"
 import NavbarPrivate from '../../components/Navbar/NavbarPrivate.js'
 import { Link } from 'react-router-dom'
 
-const Reservar = () => {
+const Reserve = () => {
   return (
     <div>
       <div>
@@ -23,4 +23,4 @@ const Reservar = () => {
   )
 }
 
-export default Reservar
+export default Reserve

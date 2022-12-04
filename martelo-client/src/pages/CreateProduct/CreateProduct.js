@@ -1,9 +1,9 @@
 import React from 'react'
-import "../CadastrarProduto/CadastrarProduto.css"
+import "../CreateProduct/CreateProduct.css"
 import NavbarPrivate from '../../components/Navbar/NavbarPrivate.js'
 import { Link } from 'react-router-dom'
 
-const CadastrarProduto = () => {
+const CreateProduct = () => {
   return (
     <div>
     <div>
@@ -23,4 +23,4 @@ const CadastrarProduto = () => {
   )
 }
 
-export default CadastrarProduto
+export default CreateProduct

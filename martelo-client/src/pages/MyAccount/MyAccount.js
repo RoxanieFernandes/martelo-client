@@ -1,9 +1,9 @@
 import React from "react";
-import "../MinhaConta/MinhaConta.css"
+import "../MyAccount/MyAccount.css"
 import { Link } from "react-router-dom";
 import NavbarPrivate from "../../components/Navbar/NavbarPrivate";
 
-const MinhaConta = () => {
+const MyAccount = () => {
   return (
     <div>
       <div>
@@ -23,4 +23,4 @@ const MinhaConta = () => {
   );
 };
 
-export default MinhaConta;
+export default MyAccount;

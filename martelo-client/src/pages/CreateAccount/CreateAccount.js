@@ -1,9 +1,9 @@
 import React from "react";
-import "../Cadastro/Cadastro.css"
+import "../CreateAccount/CreateAccount.css"
 import Navbar from "../../components/Navbar/Navbar.js";
 import { Link } from 'react-router-dom'
 
-const Cadastro = () => {
+const CreateAccount = () => {
   return (
     <div>
     <div>
@@ -23,4 +23,4 @@ const Cadastro = () => {
   );
 };
 
-export default Cadastro;
+export default CreateAccount;

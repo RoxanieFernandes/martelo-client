@@ -1,10 +1,10 @@
 import React from 'react'
 import NavbarPrivate from '../../components/Navbar/NavbarPrivate.js'
 
-const BuscarProduto = () => {
+const SearchProduct = () => {
   return (
     <NavbarPrivate/>
   )
 }
 
-export default BuscarProduto
+export default SearchProduct
