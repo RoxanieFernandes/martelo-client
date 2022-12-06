@@ -20,18 +20,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 2em;
+    padding-right: 1.5em;
     list-style-type: none;
-    font-size: 1em; 
 }
 
 .links ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    color: #f2ae30;
+    color: #024959;
     padding-left: 2.5em;
+    font-size: 0.8em;
 }
 
 .routes ul {
@@ -43,9 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 12vw;
-    color: #024959;
-    padding-left: 1vw;
+    color: #024959;   
 }
 
 .routes ul li.login {
