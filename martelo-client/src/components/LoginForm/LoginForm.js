@@ -7,37 +7,31 @@ import { Link, useNavigate } from "react-router-dom";
 const LoginForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState("");
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // const newLogin = {
-    //   email,
-    //   password,
-    // };
-
     try {
-      await api.login({ email, password })
-      navigate('/buscar-produto')
+      await api.login({ email, password });
+      navigate("/buscar-produto");
     } catch (error) {
-      showMessage(`${error.toUpperCase()}!!!`)
+      showMessage(`${error.toUpperCase()}!!!`);
     }
-  }
+  };
 
   const showMessage = (message) => {
-    setMessage(message)
+    setMessage(message);
     setTimeout(() => {
-      setMessage('')
-    }, 3000)
-  }
-
+      setMessage("");
+    }, 3000);
+  };
 
   return (
     <div className="newLogin">
-      {message !== '' && <p>{message}</p>}
+      {message !== "" && <p>{message}</p>}
       <div className="form">
         <h4>LOGIN</h4>
         <form onSubmit={handleSubmit}>
@@ -51,8 +45,6 @@ const LoginForm = (props) => {
               setEmail(e.target.value);
             }}
           />
-
-          {/* arrumar para o passwordHash e verificação de senha */}
 
           <label>Senha: </label>
           <input

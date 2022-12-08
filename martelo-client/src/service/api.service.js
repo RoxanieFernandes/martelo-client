@@ -16,8 +16,8 @@ class Api {
         }
         return config;
       },
-      (error) => {
-        console.log(error);
+      (error) => { 
+        throw(error);
       }
     );
 
@@ -26,7 +26,7 @@ class Api {
       (error) => {
         if (error.response.status === 401) {
           localStorage.removeItem("token");
-          window.location = "/";
+          window.location = "/login"; //arrumar para nao atualizar (context.api)
         }
         throw error;
       }
@@ -46,7 +46,7 @@ class Api {
       const { data } = await this.api.post("/login", loginInfo);
       localStorage.setItem("token", data.token);
     } catch (error) {
-      throw error.response.data.message;
+      throw error;
     }
   };
 

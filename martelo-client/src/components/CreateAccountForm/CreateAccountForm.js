@@ -2,7 +2,7 @@ import React from "react";
 import "../CreateAccountForm/CreateAccountForm.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Api from "../../service/api.service.js"
+import api from "../../service/api.service.js";
 
 const CreateAccountForm = (props) => {
   const [name, setName] = useState("");
@@ -26,7 +26,7 @@ const CreateAccountForm = (props) => {
     };
 
     try {
-      await Api.signup(newAccount);
+      await api.signup(newAccount);
       navigate("/login");
     } catch (error) {
       setError(error);
