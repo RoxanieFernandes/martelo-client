@@ -1,8 +1,8 @@
 import React from "react";
 import "../CreateAccountForm/CreateAccountForm.css";
 import { useState } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Api from "../../service/api.service.js"
 
 const CreateAccountForm = (props) => {
   const [name, setName] = useState("");
@@ -10,6 +10,7 @@ const CreateAccountForm = (props) => {
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
@@ -24,15 +25,24 @@ const CreateAccountForm = (props) => {
       password,
     };
 
-    await axios.post("trocar pelo link do deploy do server", newAccount);
-    navigate("/login");
+    try {
+      await Api.signup(newAccount);
+      navigate("/login");
+    } catch (error) {
+      setError(error);
+      console.log(error);
+    }
   };
 
   return (
     <div className="newAccount">
       <div className="formAccount">
         <h4>CRIAR CONTA</h4>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={(e) => {
+            handleSubmit(e);
+          }}
+        >
           <label>Nome: </label>
           <input
             type="text"
@@ -55,18 +65,102 @@ const CreateAccountForm = (props) => {
           />
 
           <label>Selecione seu bairro: </label>
-
-          {/* completar a lista de bairro e verificar se existe uma maneira de inserir varios bairros de uma vez */}
-
           <select className="neighborhood">
-            <option value="se">Sé</option>
+            <option value="Água Rasa">Água Rasa</option>
+            <option value="alto de pinheiros">Alto de Pinheiros</option>
+            <option value="anhanguera">Anhanguera</option>
+            <option value="aricanduva">Aricanduva</option>
+            <option value="artur alvim">Artur Alvim</option>
+            <option value="barra funda">Barra Funda</option>
+            <option value="Bela Vista">Bela Vista</option>
+            <option value="belem">Belém</option>
             <option value="bom retiro">Bom Retiro</option>
+            <option value="bras">Brás</option>
+            <option value="brasilandia">Brasilândia</option>
+            <option value="butanta">Butantã</option>
+            <option value="cachoeirinha">Cachoeirinha</option>
             <option value="cambuci">Cambuci</option>
-            <option value="consolacao">Consolação</option>
-            <option value="liberdade">Liberdade</option>
-            <option value="republica">República</option>
-            <option value="santa cecilia">Santa Cecília</option>
-            <option value="consolacao">Consolação</option>
+            <option value="campo belo">Campo Belo</option>
+            <option value="campo grande">Campo Grande</option>
+            <option value="campo limpo">Campo Limpo</option>
+            <option value="Cangaíba">Cangaíba</option>
+            <option value="Capão Redondo">Capão Redondo</option>
+            <option value="Cidade Dutra">Cidade Dutra</option>
+            <option value="Carrão">Carrão</option>
+            <option value="Casa Verde">Casa Verde</option>
+            <option value="Cidade Ademar">Cidade Ademar</option>
+            <option value="Cidade Líder">Cidade Líder</option>
+            <option value="Cidade Tiradentes">Cidade Tiradentes</option>
+            <option value="Consolação">Consolação</option>
+            <option value="Ermelino Matarazzo">Ermelino Matarazzo</option>
+            <option value="Freguesia do Ó">Freguesia do Ó</option>
+            <option value="Grajaú">Grajaú</option>
+            <option value="Guaianases">Guaianases</option>
+            <option value="Ipiranga">Ipiranga</option>
+            <option value="Itaim Bibi">Itaim Bibi</option>
+            <option value="Itaim Paulista">Itaim Paulista</option>
+            <option value="Itaquera">Itaquera</option>
+            <option value="Jabaquara">Jabaquara</option>
+            <option value="Jaçanã">Jaçanã</option>
+            <option value="Jaguara">Jaguara</option>
+            <option value="Jaguaré">Jaguaré</option>
+            <option value="Jaraguá">Jaraguá</option>
+            <option value="Jardim Ângela">Jardim Ângela</option>
+            <option value="Jardim Helena">Jardim Helena</option>
+            <option value="Jardim Paulista">Jardim Paulista</option>
+            <option value="Jardim São Luís">Jardim São Luís</option>
+            <option value="José Bonifácio">José Bonifácio</option>
+            <option value="Lajeado">Lajeado</option>
+            <option value="Lapa">Lapa</option>
+            <option value="Liberdade">Liberdade</option>
+            <option value="Limão">Limão</option>
+            <option value="M'Boi Mirim">M'Boi Mirim</option>
+            <option value="Mandaqui">Mandaqui</option>
+            <option value="Marsilac">Marsilac</option>
+            <option value="Moema">Moema</option>
+            <option value="Moóca">Moóca</option>
+            <option value="Morumbi">Morumbi</option>
+            <option value="Parelheiros">Parelheiros</option>
+            <option value="Pari">Pari</option>
+            <option value="Parque do Carmo">Parque do Carmo</option>
+            <option value="Pedreira">Pedreira</option>
+            <option value="Penha">Penha</option>
+            <option value="Perdizes">Perdizes</option>
+            <option value="Perus">Perus</option>
+            <option value="Pinheiros">Pinheiros</option>
+            <option value="Pirituba">Pirituba</option>
+            <option value="Ponte Rasa">Ponte Rasa</option>
+            <option value="Raposo Tavares">Raposo Tavares</option>
+            <option value="República">República</option>
+            <option value="Rio Pequeno">Rio Pequeno</option>
+            <option value="Sacomã">Sacomã</option>
+            <option value="Santa Cecília">Santa Cecília</option>
+            <option value="Santana">Santana</option>
+            <option value="Santo Amaro">Santo Amaro</option>
+            <option value="São Domingos">São Domingos</option>
+            <option value="São Lucas">São Lucas</option>
+            <option value="São Mateus">São Mateus</option>
+            <option value="São Miguel">São Miguel</option>
+            <option value="São Rafael">São Rafael</option>
+            <option value="Sapopemba">Sapopemba</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Sé">Sé</option>
+            <option value="Socorro">Socorro</option>
+            <option value="Tatuapé">Tatuapé</option>
+            <option value="Tremembé">Tremembé</option>
+            <option value="Tucuruvi">Tucuruvi</option>
+            <option value="Vila Andrade">Vila Andrade</option>
+            <option value="Vila Curuçá">Vila Curuçá</option>
+            <option value="Vila Formosa">Vila Formosa</option>
+            <option value="Vila Guilherme">Vila Guilherme</option>
+            <option value="Vila Jacuí">Vila Jacuí</option>
+            <option value="Vila Leopoldina">Vila Leopoldina</option>
+            <option value="Vila Maria">Vila Maria</option>
+            <option value="Vila Mariana">Vila Mariana</option>
+            <option value="Vila Matilde">Vila Matilde</option>
+            <option value="Vila Medeiros">Vila Medeiros</option>
+            <option value="Vila Prudente">Vila Prudente</option>
+            <option value="Vila Sônia">Vila Sônia</option>
             onChange=
             {(e) => {
               setAddress(e.target.value);
@@ -84,8 +178,6 @@ const CreateAccountForm = (props) => {
             }}
           />
 
-          {/* arrumar para o passwordHash e verificação de senha | trocar a visualização da senha para pontinhos */}
-
           <label>Senha: </label>
           <input
             type="password"
@@ -98,6 +190,7 @@ const CreateAccountForm = (props) => {
           />
           <button type="submit">Cadastrar</button>
         </form>
+        {error && <p> {error} </p>}
       </div>
     </div>
   );
