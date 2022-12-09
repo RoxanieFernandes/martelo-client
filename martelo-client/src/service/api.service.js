@@ -3,7 +3,7 @@ import axios from "axios";
 class Api {
   constructor() {
     this.api = axios.create({
-      baseURL: "http://localhost:5005/",
+      baseURL: "https://martelo.cyclic.app/",
     });
 
     this.api.interceptors.request.use(

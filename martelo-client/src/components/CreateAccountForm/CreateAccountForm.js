@@ -26,6 +26,7 @@ const CreateAccountForm = (props) => {
     };
 
     try {
+      console.log(newAccount)
       await api.signup(newAccount);
       navigate("/login");
     } catch (error) {
@@ -65,7 +66,12 @@ const CreateAccountForm = (props) => {
           />
 
           <label>Selecione seu bairro: </label>
-          <select className="neighborhood">
+          <select className="neighborhood"
+           onChange=
+           {(e) => {
+             console.log(e.target.value)
+             setAddress(e.target.value);
+           }}>
             <option value="Água Rasa">Água Rasa</option>
             <option value="alto de pinheiros">Alto de Pinheiros</option>
             <option value="anhanguera">Anhanguera</option>
@@ -161,10 +167,7 @@ const CreateAccountForm = (props) => {
             <option value="Vila Medeiros">Vila Medeiros</option>
             <option value="Vila Prudente">Vila Prudente</option>
             <option value="Vila Sônia">Vila Sônia</option>
-            onChange=
-            {(e) => {
-              setAddress(e.target.value);
-            }}
+           
           </select>
 
           <label>E-mail: </label>
