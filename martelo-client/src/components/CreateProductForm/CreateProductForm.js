@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../../service/api.service.js";
 
 const CreateProductForm = (props) => {
-  const [tool, setTool] = useState("");
+  const [productName, setProductName] = useState("");
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
@@ -19,7 +19,7 @@ const CreateProductForm = (props) => {
     e.preventDefault();
 
     const newProduct = {
-      tool,
+      productName,
       image,
       price,
       description,
@@ -48,10 +48,10 @@ const CreateProductForm = (props) => {
           <input
             type="text"
             required
-            value={tool}
+            value={productName}
             placeholder="Nome da Ferramenta"
             onChange={(e) => {
-              setTool(e.target.value);
+              setProductName(e.target.value);
             }}
           />
           <label>Imagem:</label>
@@ -67,7 +67,6 @@ const CreateProductForm = (props) => {
           {/* corrigir o imput do preço e o da imagem.
           está funcionando, mas precisa formatar */}
 
-          
           <label>Preço:</label>
           <input
             type="text"
