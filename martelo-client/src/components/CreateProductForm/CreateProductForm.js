@@ -69,7 +69,7 @@ const CreateProductForm = (props) => {
 
           <label>Preço:</label>
           <input
-            type="text"
+            type="number"
             required
             value={price}
             placeholder="Valor da diária"
