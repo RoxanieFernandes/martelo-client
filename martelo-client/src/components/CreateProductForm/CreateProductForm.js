@@ -49,7 +49,7 @@ const CreateProductForm = (props) => {
             type="text"
             required
             value={productName}
-            placeholder="Nome da Ferramenta"
+            placeholder="Nome da ferramenta"
             onChange={(e) => {
               setProductName(e.target.value);
             }}
@@ -72,7 +72,7 @@ const CreateProductForm = (props) => {
             type="text"
             required
             value={price}
-            placeholder="valor da diaria"
+            placeholder="Valor da diária"
             onChange={(e) => {
               setPrice(e.target.value);
             }}
