@@ -61,7 +61,7 @@ class Api {
 
   getProducts = async () => {
     try {
-      const { data } = await this.api.get("/product");
+      const { data } = await this.api.get("/product/");
       return data;
     } catch (error) {
       throw error.response.data.message;

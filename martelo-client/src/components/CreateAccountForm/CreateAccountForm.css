@@ -6,6 +6,7 @@
   height: 39em;
   border-radius: 3em;
   margin-bottom: 2em;
+  box-shadow: 1px 1px 1px 1px #9c9c9c ;
 }
 
 .newAccount {

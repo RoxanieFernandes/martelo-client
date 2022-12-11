@@ -9,40 +9,24 @@ const SearchProduct = () => {
   const [find, setfind] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-
-
-  // getProducts = async () => {
-  //   try {
-  //     const { data } = await this.api.get("/product");
-  //     return data;
-  //   } catch (error) {
-  //     throw error.response.data.message;
-  //   }
-  // };
-
   useLayoutEffect(() => {
-    const getAllProducts = async ({ productName, image, price, description }) => {
+    const getAllProducts = async () => {
       try {
-        await api.getProducts();
-        // navigate("/reservar");
-
-        setProducts(api);
-        setFilteredProducts(api);
+        const products = await api.getProducts();
+        setProducts(products);
+        setFilteredProducts(products);
       } catch (error) {
         throw error;
       }
-       
     };
-  
     getAllProducts();
   }, [products]);
 
- 
-
   useLayoutEffect(() => {
     if (find !== "") {
-      const filteredData = products.filter((product) => {
-        return product.includes(find.toUpperCase());
+      const filteredData =products.filter((product) => {
+        return product
+        // .includes(find.toUpperCase());
       });
       setFilteredProducts(filteredData);
     } else {
@@ -50,7 +34,7 @@ const SearchProduct = () => {
     }
   }, [find, products]);
 
-   return (
+  return (
     <div className="searchProduct">
       <div className="navbar">
         <NavbarPrivate />
@@ -75,6 +59,7 @@ const SearchProduct = () => {
           value={find}
           onChange={(e) => {
             setfind(e.target.value);
+            console.log(find);
           }}
         />
       </div>

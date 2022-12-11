@@ -77,18 +77,6 @@ const CreateProductForm = (props) => {
               setPrice(e.target.value);
             }}
           />
-          {/* <CurrencyInput
-            id="input"
-            name="input-price"
-            placeholder="Adicione o valor da diária"
-            prefix="R$ "
-            defaultValue={0}
-            allowDecimals={false}
-            onChange={(e) => {
-              setPrice(e.target.value);
-            }}
-          /> */}
-
           <label>
             Descrição:
             <textarea

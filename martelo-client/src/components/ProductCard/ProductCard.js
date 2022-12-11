@@ -4,6 +4,7 @@ import "../ProductCard/ProductCard.css";
 import { Link } from "react-router-dom";
 
 
+
 const ProductCard = ({ productName, image, price, description }) => {
   return (
     <div className="productCard">
@@ -28,21 +29,5 @@ const ProductCard = ({ productName, image, price, description }) => {
     </div>
   );
 };
-
-//   return (
-//     <div className="product-card">
-//       {/* trocar imagem para banco de dados */}
-//       <img className="logo" src={parafusadeiraSemFio} alt="martelo-logo"></img>
-//       <p>{productName}</p>
-
-//       {/* trocar para quando usuario estiver autenticado, direcionar para /reservar */}
-//       <div className="rent-btn">
-//         <Link to="/login">
-//           <button>ALUGAR</button>
-//         </Link>
-//       </div>
-//     </div>
-//   );
-// };
 
 export default ProductCard;
