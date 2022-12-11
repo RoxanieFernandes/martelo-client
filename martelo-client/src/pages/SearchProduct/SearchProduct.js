@@ -1,4 +1,5 @@
 import React, { useState, useLayoutEffect } from "react";
+import "../SearchProduct/SearchProduct.css";
 import NavbarPrivate from "../../components/Navbar/NavbarPrivate.js";
 import { Link } from "react-router-dom";
 import ProductCard from "../../components/ProductCard/ProductCard.js";
@@ -21,11 +22,12 @@ const SearchProduct = () => {
     };
     getAllProducts();
   }, [products]);
+  console.log("sou o produto do search", products);
 
   useLayoutEffect(() => {
     if (find !== "") {
-      const filteredData =products.filter((product) => {
-        return product
+      const filteredData = products.filter((product) => {
+        return product;
         // .includes(find.toUpperCase());
       });
       setFilteredProducts(filteredData);
@@ -52,19 +54,19 @@ const SearchProduct = () => {
       </div>
 
       <div className="searchProductTitle">
-        {/* <h2>Buscar Projeto</h2> */}
+        <h2>Buscar Produto </h2>
         <input
           placeholder="Buscar Produto..."
           type="text"
           value={find}
           onChange={(e) => {
             setfind(e.target.value);
-            console.log(find);
+            // console.log(find);
           }}
         />
       </div>
 
-      <div className="productsMap">
+      <div id="productsMap">
         {filteredProducts.map((product) => (
           <ProductCard
             key={product._id}

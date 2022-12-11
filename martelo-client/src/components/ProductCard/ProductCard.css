@@ -1,39 +1,42 @@
-.product-card{
-    border-radius: 15px;
-    background-color: #f2f2f2 ;
-    color: #024959;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.1vw;
-    font-size: 1,5vw;
-    justify-content: space-around;
-    
+.productCard {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  border: rgb(236, 235, 235) solid;
+  box-shadow: 1px 1px 1px 1px #dad8d8 ;
+  width: 15em;
+  height: 18em;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  color: #000;
+  /* font-family: 'Bebas Neue', sans-serif; */
+  letter-spacing: 0.1vw;
+  font-size: 1em;
 }
 
-.product-card img{
-    width: 16vw;
-    padding-top: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw; 
+img.productImg {
+  width: 13em;
+  height: 8em;
+  margin-top: 1vw;
 }
 
-.rent-btn {
-    padding-bottom: 2vw;
-    
+.rentBtn {
+  padding-bottom: 2vw;
 }
 
-.rent-btn button {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.2vw;
-    border: none;
-    border-radius: 1vw;
-    width: 7vw;
-    height: 2vw;
-    font-size: 1.1vw;
-    background-color: #024959;
-    color: #fff;
+.rentBtn button {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2vw;
+  border: none;
+  border-radius: 1vw;
+  width: 8em;
+  height: 2.5em;
+  font-size: 1em;
+  background-color: #024959;
+  color: #fff;
 }
 
-.rent-btn button:hover{
-   background-color:  #f2ae30;
-   box-shadow: 5px 5px 5px #8c8c8c ;
-} 
+.rentBtn button:hover {
+  background-color: #f2ae30;
+  box-shadow: 5px 5px 5px #8c8c8c;
+}

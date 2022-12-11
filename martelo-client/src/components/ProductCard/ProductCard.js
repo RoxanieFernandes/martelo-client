@@ -1,18 +1,20 @@
 import React from "react";
 import "../ProductCard/ProductCard.css";
-// import parafusadeiraSemFio from "../../img/parafusadeiraSemFio.jpeg";
+import image from "../../img/image.jpeg";
+// apagar image do import
 import { Link } from "react-router-dom";
 
 
-
-const ProductCard = ({ productName, image, price, description }) => {
-  return (
+// adicionar image nas props
+const ProductCard = ({ productName, price, description }) => {
+  // console.log("sou o card",price);
+    return (
     <div className="productCard">
       <div className="image">
         <img className="productImg" src={image} alt="product"></img>
       </div>
 
-      <div className="productName">
+      <div className="Name">
         <p>{productName}</p>
       </div>
 
@@ -23,9 +25,12 @@ const ProductCard = ({ productName, image, price, description }) => {
       <div className="productDescription">
         <p>{description}</p>
       </div>
+      <div className="rentBtn">
       <Link to="/reservar">
         <button>ALUGAR</button>
       </Link>
+      </div>
+      
     </div>
   );
 };

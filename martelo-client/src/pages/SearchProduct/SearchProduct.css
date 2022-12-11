@@ -11,3 +11,16 @@
     font-size: 1vw;
     color:#8c8c8c ;
 }
+
+
+.searchProductTitle h2{
+    font-family: 'Bebas Neue', sans-serif;
+    color: red;
+    font-size: 2em;
+    letter-spacing: 0.4em;
+    padding-bottom: 1em;
+}
+
+.searchProductTitle input{
+    background-color: red;
+}
