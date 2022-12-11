@@ -3,11 +3,12 @@ import "../ProductCard/ProductCard.css";
 // import parafusadeiraSemFio from "../../img/parafusadeiraSemFio.jpeg";
 import { Link } from "react-router-dom";
 
+
 const ProductCard = ({ productName, image, price, description }) => {
   return (
     <div className="productCard">
       <div className="image">
-        <img className="productImg" src={image} alt="product-image"></img>
+        <img className="productImg" src={image} alt="product"></img>
       </div>
 
       <div className="productName">
