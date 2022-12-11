@@ -3,25 +3,26 @@
   margin-right: 2vw;
   margin-bottom: 2vw;
   border: rgb(236, 235, 235) solid;
-  box-shadow: 1px 1px 1px 1px #dad8d8 ;
-  width: 15em;
-  height: 18em;
+  box-shadow: 1px 1px 1px 1px #dad8d8;
+  width: 19em;
+  height: 20em;
   border-radius: 15px;
   background-color: #f2f2f2;
   color: #000;
-  /* font-family: 'Bebas Neue', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.1vw;
   font-size: 1em;
+}
+
+.productCard p {
+  margin-top: 0;
+  margin-bottom: 0.2em;
 }
 
 img.productImg {
   width: 13em;
   height: 8em;
   margin-top: 1vw;
-}
-
-.rentBtn {
-  padding-bottom: 2vw;
 }
 
 .rentBtn button {
@@ -34,6 +35,8 @@ img.productImg {
   font-size: 1em;
   background-color: #024959;
   color: #fff;
+  margin-top: 4em;
+  margin-bottom: 0.5em;
 }
 
 .rentBtn button:hover {

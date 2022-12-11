@@ -1,26 +1,35 @@
-.routes-in-page{
-    display: flex;
-    padding-left: 0;
-    padding-top: 4em;
+.routes-in-page {
+  display: flex;
+  padding-left: 0;
+  padding-top: 4em;
 }
 
-.routes-in-page ul li{
-    display: inline;
-    list-style-type: none;
-    font-family: elza-narrow, sans-serif;
-    font-size: 1vw;
-    color:#8c8c8c ;
+.routes-in-page ul li {
+  display: inline;
+  list-style-type: none;
+  font-family: elza-narrow, sans-serif;
+  font-size: 1vw;
+  color: #8c8c8c;
 }
 
-
-.searchProductTitle h2{
-    font-family: 'Bebas Neue', sans-serif;
-    color: red;
-    font-size: 2em;
-    letter-spacing: 0.4em;
-    padding-bottom: 1em;
+.searchProductTitle h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.4em;
+  margin-bottom: 1em;
 }
 
-.searchProductTitle input{
-    background-color: red;
+.searchProductTitle input {
+  width: 50vw;
+  height: 2.5em;
+  margin-bottom: 2em;
+  background-color: #f2f2f2;
+  border: #ffff groove 2px;
+  border-radius: 5px;
+}
+
+#productsMap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
