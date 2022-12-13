@@ -22,14 +22,15 @@ const SearchProduct = () => {
     };
     getAllProducts();
   }, [products]);
-  console.log("sou o produto do search", products);
+
 
   useLayoutEffect(() => {
     if (find !== "") {
       const filteredData = products.filter((product) => {
-        return product;
-        // .includes(find.toUpperCase());
+        
+        return product?.productName?.toUpperCase().includes(find.toUpperCase());
       });
+      console.log(filteredData );
       setFilteredProducts(filteredData);
     } else {
       setFilteredProducts(products);
@@ -70,7 +71,7 @@ const SearchProduct = () => {
         {filteredProducts.map((product) => (
           <ProductCard
             key={product._id}
-            product={product.productName}
+            productName={product.productName}
             image={product.image}
             price={product.price}
             description={product.description}

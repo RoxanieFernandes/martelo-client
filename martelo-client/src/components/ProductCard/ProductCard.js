@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 // adicionar image nas props
 const ProductCard = ({ productName, price, description }) => {
-  // console.log("sou o card",price);
+  console.log("sou o card",productName);
     return (
     <div className="productCard">
       <div className="image">
