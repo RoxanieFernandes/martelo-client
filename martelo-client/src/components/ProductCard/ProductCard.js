@@ -13,11 +13,11 @@ const ProductCard = ({ productName, image, price, description }) => {
       </div>
 
       <div className="Name">
-        <p>{productName}</p>
+        <h4>{productName}</h4>
       </div>
 
       <div className="productPrice">
-        <p>{price}</p>
+        <p>R$ {price},00 / dia</p>
       </div>
 
       <div className="productDescription">
