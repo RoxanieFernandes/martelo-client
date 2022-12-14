@@ -3,7 +3,7 @@ import "../ProductCard/ProductCard.css";
 import { Link } from "react-router-dom";
 
 
-// adicionar image nas props
+
 const ProductCard = ({ productName, image, price, description }) => {
   console.log("sou o card",productName);
     return (
