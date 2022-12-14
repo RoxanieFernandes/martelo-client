@@ -1,12 +1,10 @@
 import React from "react";
 import "../ProductCard/ProductCard.css";
-import image from "../../img/image.jpeg";
-// apagar image do import
 import { Link } from "react-router-dom";
 
 
 // adicionar image nas props
-const ProductCard = ({ productName, price, description }) => {
+const ProductCard = ({ productName, image, price, description }) => {
   console.log("sou o card",productName);
     return (
     <div className="productCard">

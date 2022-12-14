@@ -1,7 +1,5 @@
 import React from "react";
 import "../CreateProductForm/CreateProductForm.css";
-// import CurrencyInput from "react-currency-input-field";
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../service/api.service.js";

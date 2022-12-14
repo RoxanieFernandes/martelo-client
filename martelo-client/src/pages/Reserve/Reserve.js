@@ -2,6 +2,7 @@ import React from 'react'
 import "../Reserve/Reserve.css"
 import NavbarPrivate from '../../components/Navbar/NavbarPrivate.js'
 import { Link } from 'react-router-dom'
+import Calendar from '../../components/Calendar/Calendar'
 
 const Reserve = () => {
   return (
@@ -19,6 +20,10 @@ const Reserve = () => {
           </Link>
         </ul>
       </div>
+<div>
+  <Calendar/>
+</div>
+
     </div>
   )
 }

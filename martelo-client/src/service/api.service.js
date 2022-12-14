@@ -84,6 +84,14 @@ class Api {
   //         throw error.response.data.message
   //       }
   //   }
+
+  rent = async (rentInfo) => {
+    try {
+      await this.api.post("/rent/:id", rentInfo);
+    } catch (error) {
+      throw error.response.data.message;
+    }
+  };
 }
 
 export default new Api();
