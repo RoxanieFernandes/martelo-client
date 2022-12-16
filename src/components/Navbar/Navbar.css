@@ -22,6 +22,7 @@
     justify-content: flex-end;
     padding-right: 1.5em;
     list-style-type: none;
+    
 }
 
 .links ul li {
@@ -33,16 +34,25 @@
     font-size: 0.8em;
 }
 
+.links ul li:hover {
+    color: #f2ae30;
+}
+
 .routes ul {
     padding-right: 2em;
     list-style-type: none;
-    font-size: 0.6em; 
+    font-size: 0.8em; 
 }
+
+
 .routes ul li {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     color: #024959;   
+}
+.routes ul li:hover {
+    color: #f2ae30;
 }
 
 .routes ul li.login {

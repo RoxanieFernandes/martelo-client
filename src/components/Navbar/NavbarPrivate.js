@@ -21,12 +21,6 @@ const NavbarPrivate = () => {
             <li className="new-product">BUSCAR PRODUTO</li>
           </Link>
 
-          {/* ver se é necessário ter o link de reserva na navbar */}
-
-          {/* <Link to="/reservar" style={{ textDecoration: "none" }}>
-            <li className="rent">QUERO ALUGAR</li>
-          </Link> */}
-
           <Link to="/minha-conta" style={{ textDecoration: "none" }}>
             <li className="rent">MINHA CONTA</li>
           </Link>

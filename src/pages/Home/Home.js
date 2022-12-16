@@ -2,6 +2,7 @@ import React from "react";
 import "../Home/Home.css";
 import Navbar from "../../components/Navbar/Navbar.js";
 import Carousel from "../../components/Carousel/Carousel.js";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -10,7 +11,14 @@ const Home = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      <div className="carousel">
+      <div className="routes-in-page">
+        <ul>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <li className="home">HOME</li>
+          </Link>
+        </ul>
+      </div>
+      <div className="carouselImages">
         <Carousel />
       </div>
 

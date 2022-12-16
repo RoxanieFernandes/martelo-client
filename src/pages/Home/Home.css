@@ -2,25 +2,20 @@
     padding-top: 4em;
 }
 
-.first-products{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vw;
-}
-
 .second-foot h1{
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0.1vw;
     color: #024959;
-    margin-top: 2vw;
+    margin-top: 1vw;
     padding-bottom: 0;
+    font-size: 3em;
 }
 
 .second-foot h3{
     font-family: 'Bebas Neue', sans-serif;
-    /* letter-spacing: 0.1vw; */
     color: #024959;
     padding-top: 0;
+    font-size: 2em;
 }
 
 
