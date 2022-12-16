@@ -3,6 +3,7 @@ import "../Home/Home.css";
 import Navbar from "../../components/Navbar/Navbar.js";
 import Carousel from "../../components/Carousel/Carousel.js";
 
+
 const Home = () => {
   return (
     <div className="home">
