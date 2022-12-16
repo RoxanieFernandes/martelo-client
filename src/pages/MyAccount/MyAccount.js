@@ -3,13 +3,22 @@ import "../MyAccount/MyAccount.css";
 import { Link } from "react-router-dom";
 import NavbarPrivate from "../../components/Navbar/NavbarPrivate";
 import api from "../../service/api.service.js";
-import ProductCard from "../../components/ProductCard/ProductCard.js";
+import ProductUserCard from "../../components/ProductCard/ProductUserCard";
 
 const MyAccount = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useLayoutEffect(() => {
+  
+const deleteOneProduct = async (_id) => {
+  try {
+    await api.deleteProduct(_id)
+    await getAllUserProducts()
+  } catch (error) {
+    throw error.response.data.msg;
+  }
+}
+
     const getAllUserProducts = async () => {
       try {
         const products = await api.getUserProducts();
@@ -19,9 +28,9 @@ const MyAccount = () => {
         throw error;
       }
     };
+    useLayoutEffect(() => {
     getAllUserProducts();
   }, [products]);
-  console.log("sou o produto da minha conta", products);
 
   return (
     <div>
@@ -42,12 +51,13 @@ const MyAccount = () => {
 
       <div id="productsMap">
         {filteredProducts.map((product) => (
-          <ProductCard
+          <ProductUserCard
             key={product._id}
             product={product.productName}
             image={product.image}
             price={product.price}
             description={product.description}
+            deleteOneProduct={deleteOneProduct}
           />
         ))}
       </div>

@@ -8,7 +8,7 @@ const LoginForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-
+ 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -18,7 +18,7 @@ const LoginForm = (props) => {
       await api.login({ email, password });
       navigate("/buscar-produto");
     } catch (error) {
-      showMessage(`${error.toUpperCase()}!!!`);
+      showMessage(`E-mail ainda não cadastrado ou senha in!!!`);
     }
   };
 
@@ -26,7 +26,7 @@ const LoginForm = (props) => {
     setMessage(message);
     setTimeout(() => {
       setMessage("");
-    }, 3000);
+    }, 4000);
   };
 
   return (
@@ -65,6 +65,7 @@ const LoginForm = (props) => {
           <Link to="/cadastro" style={{ textDecoration: "none" }}>
             <li>Clique aqui</li>
           </Link>
+          
         </ul>
       </div>
     </div>

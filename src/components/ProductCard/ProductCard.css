@@ -39,18 +39,26 @@ img.productImg {
   margin-right: 1em;
  }
 
+ .rentBtn{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 2em;
+  margin-right: 2em;
+ }
+
 .rentBtn button {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.2vw;
   border: none;
   border-radius: 1vw;
-  width: 8em;
+  width: 6em;
   height: 2.5em;
   font-size: 1em;
   background-color: #024959;
   color: #fff;
   margin-top: 1em;
   margin-bottom: 0.5em;
+  padding-right: ;
 }
 
 .rentBtn button:hover {
