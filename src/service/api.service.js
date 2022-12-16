@@ -70,7 +70,7 @@ class Api {
 
   getUserProducts = async () => {
     try {
-      const { data } = await this.api.get("/user/product");
+      const { data } = await this.api.get("/user/products");
       return data;
     } catch (error) {
       throw error.response.data.message;

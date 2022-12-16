@@ -38,6 +38,7 @@ const CreateProductForm = (props) => {
       <div className="productForm">
         <h4>CADASTRAR PRODUTO</h4>
         <form
+          action="/product"
           method="post"
           enctype="multipart/form-data"
           onSubmit={(e) => {
