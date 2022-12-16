@@ -38,6 +38,8 @@ const CreateProductForm = (props) => {
       <div className="productForm">
         <h4>CADASTRAR PRODUTO</h4>
         <form
+          method="post"
+          enctype="multipart/form-data"
           onSubmit={(e) => {
             handleSubmit(e);
           }}
@@ -55,7 +57,7 @@ const CreateProductForm = (props) => {
           <label>Imagem:</label>
           <input
             type="file"
-            name="image-file"
+            name="image"
             required
             value={image}
             onChange={(e) => {
