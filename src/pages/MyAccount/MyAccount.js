@@ -21,7 +21,6 @@ const MyAccount = () => {
     };
     getAllUserProducts();
   }, [products]);
-  console.log("sou o produto da minha conta", products);
 
   return (
     <div>
