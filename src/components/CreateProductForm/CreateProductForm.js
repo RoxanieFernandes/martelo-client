@@ -55,15 +55,13 @@ const CreateProductForm = (props) => {
           <label>Imagem:</label>
           <input
             type="file"
+            name="image-file"
             required
             value={image}
             onChange={(e) => {
               setImage(e.target.value);
             }}
           />
-
-          {/* corrigir o imput do preço e o da imagem.
-          está funcionando, mas precisa formatar */}
 
           <label>Preço:</label>
           <input

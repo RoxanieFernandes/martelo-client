@@ -30,7 +30,7 @@ const SearchProduct = () => {
         
         return product?.productName?.toUpperCase().includes(find.toUpperCase());
       });
-      console.log(filteredData );
+    
       setFilteredProducts(filteredData);
     } else {
       setFilteredProducts(products);
@@ -62,7 +62,6 @@ const SearchProduct = () => {
           value={find}
           onChange={(e) => {
             setfind(e.target.value);
-            // console.log(find);
           }}
         />
       </div>

@@ -77,15 +77,7 @@ class Api {
     }
   };
 
-  //   updateProducts = async (id, userId) => {
-  //     try {
-  //         await this.api.put('/product/${id}')
-  //       } catch (error) {
-  //         throw error.response.data.message
-  //       }
-  //   }
-
-  rent = async (rentInfo) => {
+ rent = async (rentInfo) => {
     try {
       await this.api.post("/rent/:id", rentInfo);
     } catch (error) {

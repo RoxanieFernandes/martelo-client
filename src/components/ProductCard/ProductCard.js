@@ -2,11 +2,8 @@ import React from "react";
 import "../ProductCard/ProductCard.css";
 import { Link } from "react-router-dom";
 
-
-
 const ProductCard = ({ productName, image, price, description }) => {
-  console.log("sou o card",productName);
-    return (
+  return (
     <div className="productCard">
       <div className="image">
         <img className="productImg" src={image} alt="product"></img>
@@ -24,11 +21,10 @@ const ProductCard = ({ productName, image, price, description }) => {
         <p>{description}</p>
       </div>
       <div className="rentBtn">
-      <Link to="/reservar">
-        <button>ALUGAR</button>
-      </Link>
+        <Link to="/reservar">
+          <button>ALUGAR</button>
+        </Link>
       </div>
-      
     </div>
   );
 };
