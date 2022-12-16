@@ -7,6 +7,7 @@ import MyAccount from "./pages/MyAccount/MyAccount.js";
 import SearchProduct from "./pages/SearchProduct/SearchProduct.js";
 import Reserve from "./pages/Reserve/Reserve.js";
 import CreateAccount from "./pages/CreateAccount/CreateAccount";
+import EditProduct from "./pages/EditProduct/EditProduct";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/cadastrar-produto" element={<CreateProduct />} />
         <Route path="/minha-conta" element={<MyAccount />} />
         <Route path="/reservar" element={<Reserve />} />
+        <Route path="/editar" element={<EditProduct />} />
       </Routes>
     </div>
   );

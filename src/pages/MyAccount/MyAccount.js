@@ -3,7 +3,7 @@ import "../MyAccount/MyAccount.css";
 import { Link } from "react-router-dom";
 import NavbarPrivate from "../../components/Navbar/NavbarPrivate";
 import api from "../../service/api.service.js";
-import ProductCard from "../../components/ProductCard/ProductCard.js";
+import ProductUserCard from "../../components/ProductCard/ProductUserCard";
 
 const MyAccount = () => {
   const [products, setProducts] = useState([]);
@@ -41,7 +41,7 @@ const MyAccount = () => {
 
       <div id="productsMap">
         {filteredProducts.map((product) => (
-          <ProductCard
+          <ProductUserCard
             key={product._id}
             product={product.productName}
             image={product.image}
