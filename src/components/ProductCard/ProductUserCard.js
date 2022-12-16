@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProductUserCard = ({ deleteOneProduct, productName, image, price, description }) => {
+const ProductUserCard = (props) => {
+  const { deleteOneProduct, id, productName, image, price, description } =
+    props;
+    console.log(props);
   return (
     <div className="productCard">
       <div className="image">
@@ -21,13 +24,13 @@ const ProductUserCard = ({ deleteOneProduct, productName, image, price, descript
       </div>
 
       <div className="rentBtn">
-
-        <Link to="/editar">
+        <Link to={"/editar"} state={{id, productName, image, price, description}}>
           <button className="editProduct">EDITAR</button>
         </Link>
 
-        <button onClick={ () => deleteOneProduct() } className="deleteProduct">DELETAR</button>
-        
+        <button onClick={deleteOneProduct(id)} className="deleteProduct">
+          DELETAR
+        </button>
       </div>
     </div>
   );
