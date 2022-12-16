@@ -1,42 +1,39 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 import NavbarPrivate from "../../components/Navbar/NavbarPrivate.js";
 import api from "../../service/api.service.js";
 import { useEffect, useState } from "react";
-import "../EditProduct/EditProduct.css"
+import "../EditProduct/EditProduct.css";
 
 const EditProduct = () => {
-  const { id } = useParams();
-  // const navigate = useNavigate();
+  const { state } = useLocation();
 
   const [products, setProducts] = useState("");
   const [error, setError] = useState(null);
   const [message, setMessage] = useState("");
 
-  const [productName, setProductName] = useState("");
-  const [image, setImage] = useState("");
-  const [price, setPrice] = useState("");
-  const [description, setDescription] = useState("");
+  const [form, setForm] = useState(state);
+  const onChange = (inputKey) => (e) => {
+    const { value } = e.target;
+    setForm({ ...form, [inputKey]: value });
+  };
 
   useEffect(() => {
     const getOneProduct = async () => {
       try {
-        const products = await api.getUserProducts(id);
-        setProducts(products);
+        const allProducts = await api.getUserProducts();
+        setProducts(allProducts);
       } catch (error) {
         throw error;
       }
     };
-
     getOneProduct();
-  }, [id]);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await api.editProduct({ productName, image, price, description }, id);
-
-      //   navigate(`/product/${id}`);
+      await api.editProduct(form, state.id);
       setMessage("Produto alterado com sucesso!");
     } catch (error) {
       showMessage(error);
@@ -49,6 +46,8 @@ const EditProduct = () => {
       setError(error);
     }, 3000);
   };
+
+  console.log({ form });
 
   return (
     <div>
@@ -72,53 +71,39 @@ const EditProduct = () => {
         {message !== "" && <p>{message}</p>}
         <div className="productForm">
           <h4>EDITAR PRODUTO</h4>
-          <form
-            onSubmit={(e) => {
-              handleSubmit(e);
-            }}
-          >
+          <form onSubmit={handleSubmit}>
             <label>Ferramenta: </label>
+
             <input
               type="text"
               required
-              value={productName}
-              placeholder={products.productName}
-              onChange={(e) => {
-                setProductName(e.target.value);
-              }}
+              value={form.productName}
+              onChange={onChange("productName")}
             />
             <label>Imagem:</label>
             <input
               type="file"
               name="image"
+              filename={form.image}
               required
-              value={products.image}
-              onChange={(e) => {
-                setImage(e.target.value);
-              }}
+              onChange={onChange("image")}
             />
 
             <label>Preço:</label>
             <input
               type="number"
               required
-              value={price}
-              placeholder={products.price}
-              onChange={(e) => {
-                setPrice(e.target.value);
-              }}
+              value={form.price}
+              onChange={onChange("price")}
             />
             <label>
               Descrição:
               <textarea
-                value={description}
-                placeholder={products.description}
-                onChange={(e) => {
-                  setDescription(e.target.value);
-                }}
+                value={form.description}
+                onChange={onChange("description")}
               ></textarea>
             </label>
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Salvar</button>
           </form>
           {error && <p> {error} </p>}
         </div>

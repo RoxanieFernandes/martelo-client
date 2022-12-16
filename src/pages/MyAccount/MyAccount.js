@@ -9,26 +9,25 @@ const MyAccount = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  
-const deleteOneProduct = async (_id) => {
-  try {
-    await api.deleteProduct(_id)
-    await getAllUserProducts()
-  } catch (error) {
-    throw error.response.data.msg;
-  }
-}
+  const deleteOneProduct = (_id) => async () => {
+    try {
+      await api.deleteProduct(_id);
+      await getAllUserProducts();
+    } catch (error) {
+      throw error.response.data.msg;
+    }
+  };
 
-    const getAllUserProducts = async () => {
-      try {
-        const products = await api.getUserProducts();
-        setProducts(products);
-        setFilteredProducts(products);
-      } catch (error) {
-        throw error;
-      }
-    };
-    useLayoutEffect(() => {
+  const getAllUserProducts = async () => {
+    try {
+      const products = await api.getUserProducts();
+      setProducts(products);
+      setFilteredProducts(products);
+    } catch (error) {
+      throw error;
+    }
+  };
+  useLayoutEffect(() => {
     getAllUserProducts();
   }, [products]);
 
@@ -58,6 +57,7 @@ const deleteOneProduct = async (_id) => {
             price={product.price}
             description={product.description}
             deleteOneProduct={deleteOneProduct}
+            id={product._id}
           />
         ))}
       </div>
