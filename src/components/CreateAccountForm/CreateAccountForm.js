@@ -11,6 +11,7 @@ const CreateAccountForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
 
   const navigate = useNavigate();
 
@@ -31,12 +32,20 @@ const CreateAccountForm = (props) => {
       navigate("/login");
     } catch (error) {
       setError(error);
-      console.log(error);
-    }
+      showMessage(`E-mail já cadastrado. Vá para o login e acesse sua conta!`)
+        }
+  };
+
+  const showMessage = (message) => {
+    setMessage(message);
+    setTimeout(() => {
+      setMessage("");
+    }, 4000);
   };
 
   return (
     <div className="newAccount">
+      {message !== "" && <p>{message}</p>}
       <div className="formAccount">
         <h4>CRIAR CONTA</h4>
         <form
