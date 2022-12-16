@@ -9,7 +9,16 @@ const MyAccount = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useLayoutEffect(() => {
+  
+const deleteOneProduct = async (_id) => {
+  try {
+    await api.deleteProduct(_id)
+    await getAllUserProducts()
+  } catch (error) {
+    throw error.response.data.msg;
+  }
+}
+
     const getAllUserProducts = async () => {
       try {
         const products = await api.getUserProducts();
@@ -19,6 +28,7 @@ const MyAccount = () => {
         throw error;
       }
     };
+    useLayoutEffect(() => {
     getAllUserProducts();
   }, [products]);
 
@@ -47,6 +57,7 @@ const MyAccount = () => {
             image={product.image}
             price={product.price}
             description={product.description}
+            deleteOneProduct={deleteOneProduct}
           />
         ))}
       </div>

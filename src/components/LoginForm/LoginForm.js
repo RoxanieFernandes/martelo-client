@@ -18,7 +18,7 @@ const LoginForm = (props) => {
       await api.login({ email, password });
       navigate("/buscar-produto");
     } catch (error) {
-      showMessage(`E-mail ainda não cadastrado ou senha inválida!!!`);
+      showMessage(`E-mail ainda não cadastrado ou senha in!!!`);
     }
   };
 

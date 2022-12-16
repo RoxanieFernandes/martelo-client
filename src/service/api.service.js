@@ -92,7 +92,25 @@ class Api {
       const { data } = await this.api.put("/product/:id/image-upload", formData);
       return data;
     } catch (error) {
-      throw error;
+      throw error.response.data.msg;
+    }
+  };
+
+  editProduct = async (product, id) => {
+    try {
+      const { data } = await this.api.put(`/product/${id}`, product);
+      return data;
+    } catch (error) {
+      throw error.response.data.msg;
+    }
+  };
+
+  deleteProduct = async (id) => {
+    try {
+      const { data } = await this.api.delete(`/product/${id}`);
+      return data;
+    } catch (error) {
+      throw error.response.data.msg;
     }
   };
 }

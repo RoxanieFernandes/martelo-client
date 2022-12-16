@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProductUserCard = ({ productName, image, price, description }) => {
+const ProductUserCard = ({ deleteOneProduct, productName, image, price, description }) => {
   return (
     <div className="productCard">
       <div className="image">
@@ -26,8 +26,8 @@ const ProductUserCard = ({ productName, image, price, description }) => {
           <button className="editProduct">EDITAR</button>
         </Link>
 
-        <button className="deleteProduct">DELETAR</button>
-
+        <button onClick={ () => deleteOneProduct() } className="deleteProduct">DELETAR</button>
+        
       </div>
     </div>
   );
