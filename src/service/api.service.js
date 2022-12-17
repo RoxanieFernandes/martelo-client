@@ -26,7 +26,7 @@ class Api {
       (error) => {
         if (error.response.status === 401) {
           localStorage.removeItem("token");
-          window.location = "/login"; //arrumar para nao atualizar (context.api)
+          window.location = "/login";
         }
         throw error;
       }

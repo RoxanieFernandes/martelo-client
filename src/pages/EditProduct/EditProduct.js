@@ -76,7 +76,6 @@ const EditProduct = () => {
 
             <input
               type="text"
-              required
               value={form.productName}
               onChange={onChange("productName")}
             />
@@ -85,14 +84,12 @@ const EditProduct = () => {
               type="file"
               name="image"
               filename={form.image}
-              required
               onChange={onChange("image")}
             />
 
             <label>Preço:</label>
             <input
               type="number"
-              required
               value={form.price}
               onChange={onChange("price")}
             />

@@ -50,7 +50,34 @@ img.productImg {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.2vw;
   border: none;
-  border-radius: 1vw;
+  border-radius: 2vw;
+  width: 6em;
+  height: 2.5em;
+  font-size: 1em;
+  background-color: #024959;
+  color: #fff;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.rentBtn button:hover {
+  background-color: #f2ae30;
+  box-shadow: 5px 5px 5px #8c8c8c;
+}
+
+
+ .uploadBtn{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 2em;
+  margin-right: 2em;
+ }
+
+.uploadBtn button {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2vw;
+  border: none;
+  border-radius: 2vw;
   width: 6em;
   height: 2.5em;
   font-size: 1em;
@@ -61,7 +88,19 @@ img.productImg {
   padding-right: ;
 }
 
-.rentBtn button:hover {
+.uploadBtn button:hover {
   background-color: #f2ae30;
   box-shadow: 5px 5px 5px #8c8c8c;
+}
+
+.deleteProduct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editProduct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -52,7 +52,7 @@ const MyAccount = () => {
         {filteredProducts.map((product) => (
           <ProductUserCard
             key={product._id}
-            product={product.productName}
+            productName={product.productName}
             image={product.image}
             price={product.price}
             description={product.description}

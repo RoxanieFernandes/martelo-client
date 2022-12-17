@@ -60,7 +60,7 @@ const CreateProductForm = (props) => {
             type="file"
             name="image"
             required
-            value={image}
+            filename={image}
             onChange={(e) => {
               setImage(e.target.value);
             }}
