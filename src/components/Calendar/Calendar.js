@@ -4,36 +4,36 @@ import { useNavigate } from "react-router-dom";
 import api from "../../service/api.service.js";
 
 const Calendar = (props) => {
-  // const [owner, setOwner] = useState("");
-  // const [renter, setRenter] = useState("");
-  // const [product, setProduct] = useState("");
-  const [inicialDate, setInicialDate] = useState("");
-  const [deliveryDate, setDeliveryDate] = useState("");
-  // const [price, setPrice] = useState("");
+  // // const [owner, setOwner] = useState("");
+  // // const [renter, setRenter] = useState("");
+  // // const [product, setProduct] = useState("");
+  // const [inicialDate, setInicialDate] = useState("");
+  // const [deliveryDate, setDeliveryDate] = useState("");
+  // // const [price, setPrice] = useState("");
 
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    const newRent = {
-      // owner: owner.id,
-      // renter: renter.id,
-      // product,
-      inicialDate,
-      deliveryDate,
-      // price,
-    };
+  //   const newRent = {
+  //     // owner: owner.id,
+  //     // renter: renter.id,
+  //     // product,
+  //     inicialDate,
+  //     deliveryDate,
+  //     // price,
+  //   };
 
-    try {
-      console.log(newRent);
-      await api.rent(newRent);
-      setMessage(
-        "Para combinar a retirada e pagamento, entre em contato com "
-      );
-    } catch (error) {
-  };
-}
+//     try {
+//       console.log(newRent);
+//       await api.rent(newRent);
+//       setMessage(
+//         "Para combinar a retirada e pagamento, entre em contato com "
+//       );
+//     } catch (error) {
+//   };
+// }
 
   // const showMessage = (message) => {
   //   setMessage(message);
@@ -44,7 +44,7 @@ const Calendar = (props) => {
 
   return (
     <div>
-      <div className="message">
+      {/* <div className="message">
         {message !== "" && <p>{message}</p>}
         <div className="calendar">
           <h4>FAÇA SUA RESERVA</h4>
@@ -83,7 +83,7 @@ const Calendar = (props) => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
