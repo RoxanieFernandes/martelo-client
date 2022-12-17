@@ -17,26 +17,23 @@ const Calendar = (props) => {
     e.preventDefault();
 
     const newRent = {
-      owner: owner.id,
-      renter: renter.id,
-      product,
+      // owner: owner.id,
+      // renter: renter.id,
+      // product,
       inicialDate,
       deliveryDate,
-      price,
+      // price,
     };
 
     try {
       console.log(newRent);
       await api.rent(newRent);
       setMessage(
-        "Para combinar a retirada e pagamento, entre em contato com ",
-        owner
+        "Para combinar a retirada e pagamento, entre em contato com "
       );
     } catch (error) {
-      setError(error);
-      console.log(error);
-    }
   };
+}
 
   // const showMessage = (message) => {
   //   setMessage(message);
