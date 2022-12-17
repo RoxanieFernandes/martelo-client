@@ -23,14 +23,12 @@ const SearchProduct = () => {
     getAllProducts();
   }, [products]);
 
-
   useLayoutEffect(() => {
     if (find !== "") {
       const filteredData = products.filter((product) => {
-        
         return product?.productName?.toUpperCase().includes(find.toUpperCase());
       });
-    
+
       setFilteredProducts(filteredData);
     } else {
       setFilteredProducts(products);

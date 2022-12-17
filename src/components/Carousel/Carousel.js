@@ -15,7 +15,6 @@ const Carousel = () => {
   const [width, setWidth] = useState(0)
 
   useEffect(() => {
-    console.log(slideshow.current?.scrollWidth, slideshow.current?.offsetWidth)
     setWidth(slideshow.current?.scrollWidth - slideshow.current?.offsetWidth)
   }, [])
 

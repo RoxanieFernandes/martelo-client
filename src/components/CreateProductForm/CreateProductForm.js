@@ -24,12 +24,10 @@ const CreateProductForm = (props) => {
     };
 
     try {
-      console.log(newProduct);
       await api.createProduct(newProduct);
       navigate("/minha-conta");
     } catch (error) {
       setError(error);
-      console.log(error);
     }
   };
 

@@ -27,7 +27,6 @@ const CreateAccountForm = (props) => {
     };
 
     try {
-      console.log(newAccount)
       await api.signup(newAccount);
       navigate("/login");
     } catch (error) {
@@ -78,8 +77,7 @@ const CreateAccountForm = (props) => {
           <select className="neighborhood"
            onChange=
            {(e) => {
-             console.log(e.target.value)
-             setAddress(e.target.value);
+            setAddress(e.target.value);
            }}>
             <option value="Água Rasa">Água Rasa</option>
             <option value="alto de pinheiros">Alto de Pinheiros</option>

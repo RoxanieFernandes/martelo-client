@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const ProductUserCard = (props) => {
   const { deleteOneProduct, id, productName, image, price, description } =
     props;
-    console.log(productName);
   return (
     <div className="productCard">
       <div className="image">
@@ -24,7 +23,10 @@ const ProductUserCard = (props) => {
       </div>
 
       <div className="uploadBtn">
-        <Link to={"/editar"} state={{ id, productName, image, price, description}}>
+        <Link
+          to={"/editar"}
+          state={{ id, productName, image, price, description }}
+        >
           <button className="editProduct">EDITAR</button>
         </Link>
 

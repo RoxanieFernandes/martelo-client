@@ -47,8 +47,6 @@ const EditProduct = () => {
     }, 3000);
   };
 
-  console.log({ form });
-
   return (
     <div>
       <div>
