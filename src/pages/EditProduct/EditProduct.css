@@ -7,3 +7,46 @@
   border-radius: 3em;
   font-family: "Oswald", sans-serif;
 }
+.editForm{
+  display: grid;
+  justify-content: center;
+}
+.editForm p{
+font-size: 1.2em;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons button{
+  margin-top: 0;
+}
+
+.buttons li{
+  background-color: red;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2em;
+  width: 7em;
+  height: 2em;
+  align-items: center;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 1em;
+  background-color: #024959;
+  color: #fff;
+  list-style-type: none;
+}
+
+.buttons li:hover {
+  background-color:  #f2f2f2;
+  box-shadow: 5px 5px 5px #8c8c8c ;
+  color: #000;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+}

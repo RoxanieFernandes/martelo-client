@@ -11,6 +11,7 @@
   color: #000;
   letter-spacing: 0.1vw;
   font-size: 1em;
+  
 }
 
 .productCard p {
@@ -44,6 +45,7 @@ img.productImg {
   justify-content: space-around;
   margin-left: 2em;
   margin-right: 2em;
+  text-decoration: none;
  }
 
 .rentBtn button {

@@ -1,0 +1,49 @@
+.calendar label {
+    padding-right: 0.5em;
+    padding-left: 1em;
+    
+}
+
+.calendar input{
+    height: 2em;
+    font-size: 1.2em;
+   background-color:#f2f2f2;
+   margin-bottom: 1em;
+}
+
+.calendar h4 {
+    margin-top: 0.5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  .calendar p{
+    width: 40%;
+    margin-left: 20em;
+    margin-bottom: 3em;
+    
+  }
+
+.button {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2em;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 1em;
+    width: 7em;
+    height: 2em;
+    border: none;
+    border-radius: 1em;
+    background-color: #024959;
+    color: #fff;
+  }
+  
+  .button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px 5px #8c8c8c;
+    color: #000;
+  }

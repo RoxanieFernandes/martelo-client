@@ -8,7 +8,7 @@ const LoginForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
- 
+
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -18,7 +18,7 @@ const LoginForm = (props) => {
       await api.login({ email, password });
       navigate("/buscar-produto");
     } catch (error) {
-      showMessage(`E-mail ainda não cadastrado ou senha in!!!`);
+      showMessage(`E-mail ainda não cadastrado ou senha inválida!!!`);
     }
   };
 
@@ -26,47 +26,48 @@ const LoginForm = (props) => {
     setMessage(message);
     setTimeout(() => {
       setMessage("");
-    }, 4000);
+    }, 2000);
   };
 
   return (
-    <div className="newLogin">
+    <div className="message">
       {message !== "" && <p>{message}</p>}
-      <div className="form">
-        <h4>LOGIN</h4>
-        <form onSubmit={handleSubmit}>
-          <label>E-mail: </label>
-          <input
-            type="email"
-            required
-            value={email}
-            placeholder="email@email.com.br"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
+      <div className="newLogin">
+        <div className="form">
+          <h4>LOGIN</h4>
+          <form onSubmit={handleSubmit}>
+            <label>E-mail: </label>
+            <input
+              type="email"
+              required
+              value={email}
+              placeholder="email@email.com.br"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
 
-          <label>Senha: </label>
-          <input
-            type="password"
-            required
-            value={password}
-            placeholder="Insira sua senha"
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
-          />
-          <button type="submit">Entrar</button>
-        </form>
-      </div>
-      <div className="createNewAccount">
-        <p>Ainda não tem uma conta? </p>
-        <ul>
-          <Link to="/cadastro" style={{ textDecoration: "none" }}>
-            <li>Clique aqui</li>
-          </Link>
-          
-        </ul>
+            <label>Senha: </label>
+            <input
+              type="password"
+              required
+              value={password}
+              placeholder="Insira sua senha"
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
+            />
+            <button type="submit">Entrar</button>
+          </form>
+        </div>
+        <div className="createNewAccount">
+          <p>Ainda não tem uma conta? </p>
+          <ul>
+            <Link to="/cadastro" style={{ textDecoration: "none" }}>
+              <li>Clique aqui</li>
+            </Link>
+          </ul>
+        </div>
       </div>
     </div>
   );

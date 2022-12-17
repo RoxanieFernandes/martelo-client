@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavbarPrivate from "../../components/Navbar/NavbarPrivate.js";
 import api from "../../service/api.service.js";
 import { useEffect, useState } from "react";
@@ -65,42 +65,53 @@ const EditProduct = () => {
           </Link>
         </ul>
       </div>
-      <div className="editProduct">
+      <div className="editForm">
         {message !== "" && <p>{message}</p>}
-        <div className="productForm">
-          <h4>EDITAR PRODUTO</h4>
-          <form onSubmit={handleSubmit}>
-            <label>Ferramenta: </label>
 
-            <input
-              type="text"
-              value={form.productName}
-              onChange={onChange("productName")}
-            />
-            <label>Imagem:</label>
-            <input
-              type="file"
-              name="image"
-              filename={form.image}
-              onChange={onChange("image")}
-            />
+        <div className="editProduct">
+          <div className="productForm">
+            <h4>EDITAR PRODUTO</h4>
 
-            <label>Preço:</label>
-            <input
-              type="number"
-              value={form.price}
-              onChange={onChange("price")}
-            />
-            <label>
-              Descrição:
+            <form onSubmit={handleSubmit}>
+              <label>Ferramenta: </label>
+              <input
+                type="text"
+                value={form.productName}
+                onChange={onChange("productName")}
+              />
+
+              <label>Imagem:</label>
+              <input
+                type="file"
+                name="image"
+                filename={form.image}
+                onChange={onChange("image")}
+              />
+
+              <label>Preço:</label>
+              <input
+                type="number"
+                value={form.price}
+                onChange={onChange("price")}
+              />
+
+              <label>Descrição:</label>
               <textarea
                 value={form.description}
                 onChange={onChange("description")}
               ></textarea>
-            </label>
-            <button type="submit">Salvar</button>
-          </form>
-          {error && <p> {error} </p>}
+
+              <div className="buttons">
+                <button type="submit">Salvar</button>
+
+                <Link to="/minha-conta" style={{ textDecoration: "none" }}>
+                  <li className="back"> VOLTAR </li>
+                </Link>
+              </div>
+              
+            </form>
+            {error && <p> {error} </p>}
+          </div>
         </div>
       </div>
     </div>

@@ -77,19 +77,20 @@ class Api {
     }
   };
 
- rent = async (rentInfo) => {
+ rent = async (rentInfo, id) => {
     try {
-      await this.api.post("/rent/:id", rentInfo);
+      const { data } = await this.api.post(`/rent/${id}`, rentInfo);
+      return data;
     } catch (error) {
       throw error.response.data.message;
     }
   };
 
-  uploadImage = async (file) => {
+  uploadImage = async (file, id) => {
     const formData = new FormData();
     formData.append("image", file);
     try {
-      const { data } = await this.api.put("/product/:id/image-upload", formData);
+      const { data } = await this.api.put(`/product/${id}/image-upload`, formData);
       return data;
     } catch (error) {
       throw error.response.data.msg;
