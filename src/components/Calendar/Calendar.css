@@ -1,49 +1,69 @@
-.calendar label {
-    padding-right: 0.5em;
-    padding-left: 1em;
-    
+.return {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.calendar {
+  padding-top: 1em;
+  margin: 0 0 0 0;
+  background-color: #f2ae30;
+  width: 39em;
+  height: 25em;
+  border-radius: 3em;
+  font-family: "Oswald", sans-serif;
 }
 
-.calendar input{
-    height: 2em;
-    font-size: 1.2em;
-   background-color:#f2f2f2;
-   margin-bottom: 1em;
+.calendar label {
+  padding-right: 0.5em;
+  padding-left: 1em;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.calendar input {
+  height: 2em;
+  font-size: 1.2em;
+  background-color: #f2f2f2;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border-color: #fff;
 }
 
 .calendar h4 {
-    margin-top: 0.5em;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 2em;
-    letter-spacing: 0.3em;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-  }
+  margin-top: 0.5em;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
 
-  .calendar p{
-    width: 40%;
-    margin-left: 20em;
-    margin-bottom: 3em;
-    
-  }
+.calendar p {
+  align-items: center;
+  width: 90%;
+  margin-left: 2em;
+  margin-right: 4em;
+  padding-bottom: 2.5em;
+}
 
 .button {
-    font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 0.2em;
-    display: inline-block;
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: 1em;
-    width: 7em;
-    height: 2em;
-    border: none;
-    border-radius: 1em;
-    background-color: #024959;
-    color: #fff;
-  }
-  
-  .button:hover {
-    background-color: #f2f2f2;
-    box-shadow: 5px 5px 5px #8c8c8c;
-    color: #000;
-  }
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 1em;
+  width: 7em;
+  height: 2em;
+  border: none;
+  border-radius: 1em;
+  background-color: #024959;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 5px #8c8c8c;
+  color: #000;
+}

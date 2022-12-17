@@ -29,7 +29,7 @@ const EditProduct = () => {
     };
     getOneProduct();
   }, []);
-  products();
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
