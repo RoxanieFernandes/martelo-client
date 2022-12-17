@@ -29,6 +29,7 @@ const EditProduct = () => {
     };
     getOneProduct();
   }, []);
+  products();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -108,7 +109,6 @@ const EditProduct = () => {
                   <li className="back"> VOLTAR </li>
                 </Link>
               </div>
-              
             </form>
             {error && <p> {error} </p>}
           </div>
