@@ -3,9 +3,10 @@
   justify-content: center;
   background-color: #f2ae30;
   width: 39em;
-  height: 38em;
+  height: 35em;
   border-radius: 3em;
   font-family: "Oswald", sans-serif;
+  margin-bottom: 2em;
 }
 
 .productForm {
@@ -20,7 +21,7 @@
   font-size: 2em;
   letter-spacing: 0.4em;
   padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.1em;
 }
 
 .productForm form {

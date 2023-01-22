@@ -1,7 +1,7 @@
 .newLogin{
   background-color:#f2ae30;
-  width: 45em;
-  height: 32em;
+  width: 39em;
+  height: 28em;
   border-radius: 3em;
   box-shadow: 1px 1px 1px 1px #9c9c9c ;
 
@@ -10,14 +10,14 @@
 .newLogin{
     font-family: "Oswald", sans-serif;
     letter-spacing: 0.1em;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .form h4 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2em;
     letter-spacing: 0.4em;
-    padding-bottom: 1em;
+    padding-bottom: 0.1em;
   }
 
 .form {
