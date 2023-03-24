@@ -1,5 +1,6 @@
 .editProduct {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #f2ae30;
   width: 39em;
@@ -7,45 +8,53 @@
   border-radius: 3em;
   font-family: "Oswald", sans-serif;
 }
-.editForm{
+.editForm {
   display: grid;
   justify-content: center;
 }
-.editForm p{
-font-size: 1.2em;
+.editForm p {
+  font-size: 1.2em;
 }
 
-.buttons{
+.buttons {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.buttons button{
+.buttons button {
   margin-top: 0;
+  border-radius: 8px;
 }
 
-.buttons li{
-  font-family: 'Bebas Neue', sans-serif;
+.buttons li {
+  font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.2em;
   width: 7em;
   height: 2em;
   align-items: center;
   font-size: 1.1em;
   border: none;
-  border-radius: 1em;
+  border-radius: 8px;
   background-color: #024959;
   color: #fff;
   list-style-type: none;
 }
 
 .buttons li:hover {
-  background-color:  #f2f2f2;
-  box-shadow: 5px 5px 5px #8c8c8c ;
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 5px #8c8c8c;
   color: #000;
 }
 
 .back {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .editProduct {
+    width: 20em;
+    height: 32em;
+  }
 }

@@ -6,10 +6,7 @@
   height: 39em;
   border-radius: 3em;
   margin-bottom: 2em;
-  box-shadow: 1px 1px 1px 1px #9c9c9c ;
-}
-
-.newAccount {
+  box-shadow: 1px 1px 1px 1px #9c9c9c;
   font-family: "Oswald", sans-serif;
 }
 
@@ -31,7 +28,6 @@
 
 .formAccount form {
   max-width: 30em;
-
 }
 
 .formAccount label {
@@ -62,22 +58,53 @@
 }
 
 .formAccount button {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.2em;
-    display: inline-block;
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: 0.5em;
-    width: 7em;
-    height: 2em;
-    border: none;
-    border-radius: 1em;
-    background-color: #024959;
-    color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  width: 7em;
+  height: 2em;
+  border: none;
+  border-radius: 1em;
+  background-color: #024959;
+  color: #fff;
+}
+
+.formAccount button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 5px #8c8c8c;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .newAccount {
+    width: 70vw;
+    height: 34em;
   }
 
-.formAccount button:hover{
-    background-color:  #f2f2f2;
-    box-shadow: 5px 5px 5px #8c8c8c ;
-    color: #000;
- } 
+  .formAccount {
+    max-width: 55vw;
+    padding-top: 0.5em;
+  }
+
+  .formAccount h4 {
+    font-size: 1.5em;
+    padding-bottom: 0em;
+
+  }
+  .formAccount input {
+    width: 95%;
+    font-size: 0.8em;
+  }
+
+  .formAccount label {
+    font-size: 0.9em;
+  }
+
+  .formAccount select {
+    width: 103%;
+    font-size: 0.8em;
+  }
+}

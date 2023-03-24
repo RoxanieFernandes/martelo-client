@@ -62,11 +62,11 @@ const LoginForm = (props) => {
         </div>
         <div className="createNewAccount">
           <p>Ainda não tem uma conta? </p>
-          <ul>
+          <p>
             <Link to="/cadastro" style={{ textDecoration: "none" }}>
-              <li>Clique aqui</li>
+              Clique aqui
             </Link>
-          </ul>
+          </p>
         </div>
       </div>
     </div>

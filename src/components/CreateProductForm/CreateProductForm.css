@@ -76,3 +76,34 @@
   box-shadow: 5px 5px 5px #8c8c8c;
   color: #000;
 }
+
+@media (max-width: 767px) {
+  .newProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20em;
+    height: 32em;
+  }
+  .productForm {
+    width: 18em;
+  }
+
+  .productForm h4 {
+    font-size: 1.5em;
+  }
+
+  .productForm input {
+    width: 95%;
+    font-size: 0.8em;
+  }
+
+  .productForm textarea {
+    width: 95%;
+    font-size: 0.8em;
+  }
+
+  .productForm label {
+    font-size: 0.9em;
+  }
+}

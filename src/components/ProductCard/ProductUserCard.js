@@ -23,7 +23,7 @@ const ProductUserCard = (props) => {
       </div>
 
       <div className="uploadBtn">
-        <Link
+        <Link style={{ textDecoration: 'none'}}
           to={"/editar"}
           state={{ id, productName, image, price, description }}
         >

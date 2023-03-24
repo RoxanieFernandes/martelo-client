@@ -7,7 +7,7 @@ const NavbarPrivate = () => {
   return (
     <div className="navbar">
       <img className="logo" src={martelo} alt="martelo-logo"></img>
-      <div className="links">
+      <div id="links">
         <ul>
           <Link to="/" style={{ textDecoration: "none" }}>
             <li className="home">HOME</li>

@@ -1,6 +1,5 @@
 .routes-in-page {
   display: flex;
-  padding-left: 0;
   padding-top: 4em;
 }
 
@@ -8,7 +7,7 @@
   display: inline;
   list-style-type: none;
   font-family: elza-narrow, sans-serif;
-  font-size: 1vw;
+  font-size: 0.8em;
   color: #8c8c8c;
 }
 
@@ -33,3 +32,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media (max-width: 767px) {
+  .searchProductTitle h2 {
+    font-size: 1.5em;
+  }
+  
+}
+
