@@ -4,7 +4,6 @@ import Navbar from "../../components/Navbar/Navbar.js";
 import Carousel from "../../components/Carousel/Carousel.js";
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
   return (
     <div className="home">
@@ -18,16 +17,35 @@ const Home = () => {
           </Link>
         </ul>
       </div>
+      <div className="home-first-wide">
+        <div className="home-text">
+          <h1>Aqui você encontra o equipamento para o seu projeto.</h1>
+          <h3>
+            E também pode alugar aquele seu equipamento parado em casa e faturar
+            uma graninha.
+          </h3>
+        </div>
+        <div className="home-button">
+        <div id="button">
+          <Link to="/cadastro" style={{ textDecoration: "none", color:"white" }}>CADASTRE-SE AGORA</Link>
+        </div>
+          <div className="home-login">
+            <p>Já possui cadastro? </p>
+            <p>
+              <Link
+                to="/login"
+                style={{ textDecoration: "none", color: "blue" }}
+              >
+                Clique aqui
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="carouselImages">
         <Carousel />
       </div>
-
-      <div className="second-foot">
-        <h1>Tem algum equipamento parado?</h1>
-        <h3>Alguém pode estar procurando por ele.</h3>
-      </div>
-
-       </div>
+    </div>
   );
 };
 

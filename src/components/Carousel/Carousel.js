@@ -6,8 +6,12 @@ import image1 from "../../img/image1.jpeg";
 import image2 from "../../img/image2.jpeg";
 import image3 from "../../img/image3.jpeg";
 import image4 from "../../img/image4.jpeg";
+import image5 from "../../img/image5.jpeg";
+import image6 from "../../img/image6.jpeg";
+import image7 from "../../img/image7.jpeg";
 
-const images = [image1, image2, image3, image4];
+
+const images = [image1, image2, image3, image4, image5, image6, image7];
 
 const Carousel = () => {
   
@@ -29,9 +33,9 @@ const Carousel = () => {
           className="inner"
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
-          initial={{ x: 200 }}
+          initial={{ x: 350 }}
           animate={{ x: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 2 }}
         >
           {images.map(image => (
             <motion.div className="item" key={image}>

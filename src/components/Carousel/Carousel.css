@@ -1,6 +1,6 @@
 .Carousel{
   width: 100%;
-  max-width: 980px;
+  max-width: 80%;
   margin: 0 auto;
   min-height: 55vh;
   display: flex;

@@ -1,11 +1,12 @@
 .navbar {
+  padding-left: 0.5em;
   width: 100%;
-  height: 4em;
+  height: 80px;
   display: flex;
   justify-content: space-between;
-  background-color: #f2f2f2;
-  border-bottom: #024959 solid 0.2vw;
+  background-color: #fff;
   position: fixed;
+  box-shadow: 2px 1px 5px rgb(238, 238, 238);
 }
 
 #links {
@@ -13,6 +14,7 @@
   align-items: center;
   justify-content: flex-end;
   margin: none;
+  padding-right: 1.5em;
 }
 
 #links ul {
@@ -35,17 +37,21 @@
 #links ul li:hover {
   color: #f2ae30;
 }
-
+.routes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 4em;
+  text-align: end;
+}
 .routes ul {
-  padding-right: 2em;
   list-style-type: none;
   font-size: 0.8em;
 }
 
 .routes ul li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   color: #024959;
 }
 .routes ul li:hover {
@@ -57,44 +63,43 @@
 }
 
 @media (max-width: 767px) {
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-    }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-    .navbar img {
-        height: 80%
-        
-    }
-    
-    #links {
-        background-image: url(../../img/menu-de-tres-linhas.png);
-        background-repeat: no-repeat, no-repeat;
-        background-position: center;
-    }
- 
-    #links ul li{
-        position: relative;
-        display: none;
-    }
+  .navbar img {
+    height: 80%;
+  }
 
-    #links:hover { 
-        background-image: url(../../img/martelo.png)
-    }
-    
-    .routes ul {
-        width: 25vw;
-        margin: 0;
-    }
+  #links {
+    background-image: url(../../img/menu-de-tres-linhas.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+  }
 
-    .routes ul li {
-        width: 28vw;
-        font-size: 0.8em;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        color: #024959;
-      }
+  #links ul li {
+    position: relative;
+    display: none;
+  }
+
+  #links:hover {
+    background-image: url(../../img/martelo.png);
+  }
+
+  .routes ul {
+    width: 25vw;
+    margin: 0;
+  }
+
+  .routes ul li {
+    width: 28vw;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #024959;
+  }
 }

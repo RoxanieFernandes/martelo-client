@@ -1,23 +1,56 @@
-.about-page{
-    padding-top: 4em;
+.home-first-wide {
+  display: flex;
 }
 
-.second-foot h1{
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.1vw;
-    color: #024959;
-    margin-top: 1vw;
-    padding-bottom: 0;
-    font-size: 3em;
+.home-text {
+  width: 55%;
+  padding-left: 3em;
+  padding-right: 2em;
+  text-align: left;
 }
 
-.second-foot h3{
-    font-family: 'Bebas Neue', sans-serif;
-    color: #024959;
-    padding-top: 0;
-    font-size: 2em;
+.home-text h1 {
+  font-family: "gg sans SemiBold", sans-serif;
+  letter-spacing: -0.3vw;
+  color: #000;
+  margin-top: 1vw;
+  font-size: 3.4em;
+  line-height: 1em;
 }
 
+.home-text h3 {
+  font-family: "gg sans Normal", sans-serif;
+  color: #4e4e4e;
+  padding-top: 0;
+  font-size: 1.4em;
+}
 
+.home-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  padding-left: 2em;
+  padding-right: 4em;
+  text-align: justify;
+}
 
- 
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 342px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f2ae30;
+  font-size: 18px;
+  font-family: "gg sans Bold", sans-serif;
+}
+
+.home-login {
+  display: flex;
+  justify-content: center;
+  color: #4e4e4e;
+}
