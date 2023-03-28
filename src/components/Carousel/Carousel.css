@@ -1,6 +1,6 @@
 .Carousel{
   width: 100%;
-  max-width: 80%;
+  max-width: 93%;
   margin: 0 auto;
   min-height: 55vh;
   display: flex;
@@ -14,8 +14,8 @@
 
 .item{
   min-height: 200px;
-  min-width: 400px;
-  padding: 14px;
+  min-width: 365px;
+  padding: 10px;
 }
 
 .item img{
