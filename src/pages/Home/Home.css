@@ -1,14 +1,15 @@
 .home-first-wide {
   display: flex;
+  flex-wrap: wrap;
   height: 33vh;
-  padding-bottom: none;
-  margin-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .home-text {
-  width: 55%;
-  padding-left: 3em;
-  padding-right: 2em;
+  width: 100%;
+  max-width: 55%;
+  padding: 0 2em;
   text-align: left;
 }
 
@@ -33,9 +34,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 45%;
-  padding-left: 2em;
-  padding-right: 4em;
+  width: 100%;
+  max-width: 30%;
+  padding: 0 2em;
   text-align: justify;
 }
 
@@ -43,7 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 342px;
+  width: 100%;
+  max-width: 342px;
   height: 50px;
   border: none;
   border-radius: 25px;
@@ -52,8 +54,25 @@
   font-family: "gg sans Bold", sans-serif;
 }
 
+#button:hover {
+  background-color: #4e4e4e;
+  box-shadow: 5px 5px 5px #8c8c8c;
+}
+
 .home-login {
   display: flex;
   justify-content: center;
   color: #4e4e4e;
+}
+
+@media screen and (max-width: 768px) {
+  .home-first-wide {
+    height: auto;
+  }
+
+  .home-text,
+  .home-button {
+    width: 100%;
+    max-width: 100%;
+  }
 }

@@ -48,6 +48,10 @@ const EditProduct = () => {
     }, 3000);
   };
 
+
+  // products deve excluir, foi ativado só para nao dar erro
+  products()
+
   return (
     <div>
       <div>

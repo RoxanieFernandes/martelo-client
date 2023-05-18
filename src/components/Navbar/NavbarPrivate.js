@@ -1,31 +1,32 @@
 import React from "react";
-import "../Navbar/Navbar.css";
 import martelo from "../../img/martelo.png";
-import { Link } from "react-router-dom";
+import "../Navbar/Navbar.css";
 
 const NavbarPrivate = () => {
   return (
     <div className="navbar">
       <img className="logo" src={martelo} alt="martelo-logo"></img>
-      <div id="links">
-        <ul>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <li className="home">HOME</li>
-          </Link>
-
-          <Link to="/cadastrar-produto" style={{ textDecoration: "none" }}>
-            <li className="new-product">CADASTRAR PRODUTO</li>
-          </Link>
-
-          <Link to="/buscar-produto" style={{ textDecoration: "none" }}>
-            <li className="new-product">BUSCAR PRODUTO</li>
-          </Link>
-
-          <Link to="/minha-conta" style={{ textDecoration: "none" }}>
-            <li className="rent">MINHA CONTA</li>
-          </Link>
-        </ul>
-      </div>
+      <button
+        className="hamburger-button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span className="hamburger-icon"></span>
+      </button>
+      <ul className="nav-links">
+        <li>
+          <a href="/cadastrar-produto">Cadastrar Produto</a>
+        </li>
+        <li>
+          <a href="/buscar-produto">Buscar Produto</a>
+        </li>
+        <li>
+          <a href="/minha-conta">Minha Conta</a>
+        </li>
+        <li>
+          <a href="/"><b>Sair</b></a>
+        </li>
+      </ul>
     </div>
   );
 };
