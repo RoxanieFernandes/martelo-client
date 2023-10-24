@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# MARTELO - Sua Loja Online de Locação de Ferramentas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Bem-vindo ao MARTELO**, a plataforma que torna a locação de ferramentas uma experiência simples e eficiente. MARTELO conecta pessoas físicas que desejam alugar ferramentas com proprietários dispostos a disponibilizá-las. Com uma interface amigável e recursos robustos, facilitamos o processo de encontrar e alugar ferramentas, bem como oferecer as suas próprias.
 
-## Available Scripts
+## Recursos Principais
 
-In the project directory, you can run:
+- **Ampla Variedade de Ferramentas:** Explore e alugue ferramentas de diferentes categorias.
 
-### `npm start`
+- **Aluguel Simples e Rápido:** Processo de aluguel fácil e seguro.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Ofereça Suas Próprias Ferramentas:** Ganhe dinheiro extra compartilhando suas ferramentas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Tecnologias Utilizadas:** Desenvolvido com React, Express, Node.js e MongoDB.
 
-### `npm test`
+## Comece Agora
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Siga as etapas abaixo para começar a usar o MARTELO:
 
-### `npm run build`
+1. Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   git clone https://github.com/RoxanieFernandes/martelo-client.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Configure o ambiente de desenvolvimento local.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Execute o servidor Express.
 
-### `npm run eject`
+4. Acesse o aplicativo no seu navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contribua
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Estamos abertos a contribuições da comunidade para melhorar o MARTELO. Sinta-se à vontade para abrir problemas e enviar solicitações de pull.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Licença
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto é licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
